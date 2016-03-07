@@ -1,0 +1,509 @@
+/*
+	Last Modified:	17:05 Wednesday, February 10, 2016
+	4D617A696172204261727A69
+*/
+
+@brandcolor-1: #912070;
+@brandcolor-2: #c4d94b;
+@brandcolor-3: #ff5400;
+@smallscreen: ~"screen and (max-width: 480px)";
+@mediumscreen: ~"screen and (min-width: 481px) and (max-width: 720px)  ";
+
+.rightel-iconset-32 {
+	width: 32px;
+	height: 32px;
+	background-image: url(/documents/10180/2456172/rightel-iconset-32.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	&.basket {
+		background-position: 10px 5px;
+	}
+	&.list {
+		background-position:-25px 7px;
+	}
+	&.download {
+		background-position: -54px 6px;
+	}
+}
+
+.rightel-datapack {
+	height:auto;
+	display:table;
+	width:100%;
+	float:right;
+	font-family:tahoma, arial, verdana;
+	border-top:1px solid #ccc;
+	& > #dynamicFilter {
+		display: block;
+		margin: 0;
+		direction: rtl;
+		line-height: normal;
+		padding: 0px 10px;
+		& > .container {
+			margin-top: 0;
+			min-height: 25px;
+			padding: 10px 0px;
+			& > ul {
+				display: block;
+				list-style: none none outside;
+				margin: 0;
+				padding: 0;
+				border-width: 0;
+				& > li {
+					display: inline-block;
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					border-width: 0;
+					& > .filter {
+						width: 140px;
+						margin-bottom: 5px;
+						margin-left: 5px;
+						background-color: #fff;
+						border-radius: 5px;
+						& > .header {
+							position: relative;
+							z-index: 1;
+							height: 21px;
+							font-weight: 400;
+							cursor: pointer;
+							background: none repeat scroll 0 0 #f4f3f8;
+							border: 1px solid #d9d9d9;
+							border-radius: 5px;
+							width: 140px;
+							min-width: 140px !important;
+							font-family: 'rightel_yekan',Tahoma ,Arial;
+							& > span {
+								display: inline-block;
+								padding: 0 4px 0 6px;
+								width: 90%;
+								background: url(/documents/10180/2456172/sideArrow.gif) no-repeat scroll left 3px rgba(0, 0, 0, 0);
+								line-height: 23px;
+								color: #4d4d4d;
+								font-family: 'rightel_yekan',Tahoma ,Arial;
+							}
+							& .options {
+								display: none;
+								position: absolute;
+								right: 0px;
+								top: 19px;
+								text-align: right;
+								text-transform: none;
+								padding-left: 3px;
+								margin-right: -1px;
+								margin-top: 2px;
+								& .spacer-top {
+									display: block;
+									width: 140px;
+									background-color: #fff;
+									border-right: 1px solid #d9d9d9;
+									border-left: 1px solid #d9d9d9;
+									bottom: -1px;
+									height: 5px;
+									margin-top: -1px;
+									position: relative;
+									-moz-box-shadow: -1px 0 0 #c4c4c4;
+									-webkit-box-shadow: -1px 0 0 #c4c4c4;
+									box-shadow: -1px 0 0 #c4c4c4;
+								}
+								& .spacer-bottom {
+									width: 175px;
+									height: 3px;
+									background: rgba(0, 0, 0, 0) url(/documents/10180/2456172/spritefilterflydownbgall.png) no-repeat scroll -2689px top;
+								}							
+								& .middle {
+									width: 175px;
+									display: block;
+									background: url(/documents/10180/2456172/spritefilterflydownbgall.png) repeat-y -4580px top;
+									& .scroller {
+										display: block;
+										width: 163px;
+										max-height: 202px;
+										color: #565453;
+										overflow-x: hidden;
+										overflow-y: auto;
+										z-index: 99;
+										border-top: 1px solid #d9d9d9;
+										margin: 0;
+										padding: 0 3px 6px 5px;
+										& .viewall {
+											height: 13px;
+											line-height: normal;
+											padding-right: 15px;
+											background: rgba(0, 0, 0, 0) url(/documents/10180/2456172/spritefiltercontrols.png) no-repeat right -150px;
+											font-size: 11px;
+											color: #393939;
+											margin: 2px 5px 0 0;
+											font-family: 'rightel_yekan',Tahoma ,Arial;
+											&.selected {
+												background-position: 100% -252px;
+											}
+										}
+										& .divider {
+											height: 1px;
+											background-color: #ccc;
+											margin: 8px 5px 9px;
+										}
+										& ul {
+											margin: 0;
+											padding: 0;
+											list-style: none;
+											margin-right: 5px;
+											cursor: default;
+											& > li {
+												margin: 0;
+												padding: 0;
+												margin-bottom: 7px;
+												padding-right: 15px;
+												font-family: 'rightel_yekan',Tahoma ,Arial;
+												cursor: pointer;
+												background: url(/documents/10180/2456172/spritefiltercontrols.png) no-repeat right -150px;
+												color: #393939;
+												line-height: normal;
+												list-style: none;
+												&.selected {
+													background-position: 100% -252px;
+													color: #393939;
+												}
+												&.hover {
+													background-position: 100% -201px;
+												}
+											}
+										}
+									}
+								}
+							}
+							&.expanded {
+								background-position: 0 -42px!important;
+								z-index: 30;
+								border-bottom: 0;
+								border-radius: 5px 5px 0 0;
+								background-color: #eee;
+								background: 0;
+								-moz-box-shadow: -1px 0 1px #c4c4c4;
+								-webkit-box-shadow: -1px 0 1px #c4c4c4;
+								box-shadow: -1px 0 1px #c4c4c4;
+								& span {
+									background: url(/documents/10180/2456172/downArrow.gif) no-repeat scroll left center rgba(0, 0, 0, 0);
+								}
+							}
+						}
+						& .hitarea {
+							position: absolute;
+							right: -10px;
+							top: 35px;
+							z-index: 0;
+							cursor: default;
+							&.hidden {
+								display:none;
+							}
+						}
+						& .chosen {
+							margin: 0;
+							padding: 0;
+							list-style: none none outside;
+							display: none;
+							height: auto;
+							padding-top: 2px;
+							background-color: #fff;
+							width: 140px;
+							border-color: #d9d9d9;
+							border-style: none solid solid;
+							border-width: medium 1px 1px;
+							font-size:11px;
+							& > li {
+								margin: 0;
+								padding: 0;
+								list-style: none;
+								border-width: 0;
+								clear: both;
+								height: 21px;
+								& > span {
+									&.label {
+										float: right;
+										height: 17px;
+										width: 78%;
+										white-space: nowrap;
+										padding-right: 7px;
+										padding-top: 4px;
+										line-height:normal;
+									}
+								}
+								& > a {
+									text-decoration: none;
+									outline: 0;
+									&.delete {
+										display: inline-block;
+										float: left;
+										width: 15px;
+										height: 21px;
+										text-indent: 0;
+										overflow: hidden;
+										vertical-align: top;
+										cursor: pointer;
+										background: rgba(0, 0, 0, 0) url(/documents/10180/2456172/spritefiltercontrols.png) no-repeat right -357px;
+										&:hover { 
+											background-position: right -378px;
+										}
+									}
+									&:hover {
+										color: #ef3f3e;
+									}
+								}
+							}
+						}
+						&.has-selections {
+							& .header {
+								background-position: 0 -63px;
+								border-radius: 5px 5px 0 0;
+							}
+						}
+						
+						
+					}
+				}
+			}
+			& > #CategorySuggest {
+				display: inline;
+				float: left;
+				margin-top: -10px;	
+			}
+		}
+	}
+	
+	& > #content-pack {
+		& > table {
+			width:100%;
+			margin:0px auto;
+			border-collapse: collapse;
+			padding: 5px;
+			& > thead {
+				& > tr {
+					background-color:#e8e8e8;
+					& > th {
+						padding:15px 0px;
+						font-family: 'rightel_yekan',Tahoma ,Arial;
+						cursor:default;
+						border-bottom:1px solid #666;
+						vertical-align: bottom;
+						height:30px;
+						&:nth-child(1){
+							width: 30%;
+						}
+						&:nth-child(2){
+							width: 10%;
+						}
+						&:nth-last-child(-n+4){
+							width: 15%;
+						}
+						&.data-tag-orange {
+							position:relative;
+							&:after{
+								content:"";
+								background-image:url(/documents/10180/2456172/rightel-datapack-bookmark.png);
+								background-repeat:no-repeat;
+								display: inline-block;
+								width:25px;
+								height:28px;
+								color:#fff;
+								top: -2px;
+								left: 6px;
+								font-weight:normal;
+								position:absolute;
+							}
+						}
+					}
+				}
+			}
+			& > tbody {
+				& > tr {
+					border:1px solid #ddd;
+					transition: all 300ms ease;
+					-o-transition: all 300ms ease;
+					-moz-transition: all 300ms ease;
+					-webkit-transition: all 300ms ease;
+					& > td {
+						border:1px solid #ddd;
+						transition: all 300ms ease;
+						-o-transition: all 300ms ease;
+						-moz-transition: all 300ms ease;
+						-webkit-transition: all 300ms ease;
+						text-align:center;
+						vertical-align:middle;
+						height:60px;
+						&:last-child {
+							background-color:#f3f3f3;
+							border-bottom: 1px solid #fff;
+							& > a {
+								width:100%;
+								height:54px;
+								display:block;
+								float:left;
+								text-decoration:none;
+								@media @smallscreen, @mediumscreen {
+									text-align:center;
+									height: initial;
+								}
+								& > span {
+									color:#353c3d;
+									display: inline-block;
+									float: right;
+									width: 65%;
+									text-align: left;
+									margin-top: 17px;
+									font-family: 'rightel_yekan',Tahoma ,Arial;
+									font-size:15px;
+									font-weight:bold;
+									@media @smallscreen, @mediumscreen {
+										text-align:center;
+										width:100%;
+									}
+								}
+								& > i {
+									width: 42px;
+									height: 32px;
+									display:inline-block;
+									background-color: transparent;
+									float: left;
+									border-radius: 0px 5px 5px 0px;
+									margin-top: 12px;
+									margin-left: -2px;
+									@media @smallscreen, @mediumscreen {
+										border-radius:5px;
+										float:none;
+									}									
+								}
+							}
+						}
+						&:nth-child(1) {
+							position:relative;
+							& > span {
+								width: 82%;
+								display: block;
+								margin: 0px 0px 0px 15px;
+								float: left;
+								text-align:justify;
+							}
+							& > div.specialpackage {
+								position:absolute;
+								width: 22px;
+								top:0px;
+								right:0px;
+								height:100%;
+								background-color:#fff;
+								@media @smallscreen, @mediumscreen {
+									display:none;
+								}
+								& > span {
+									cursor:default;
+									display: inline-block;
+									transform:rotate(-90deg);
+									-o-transform:rotate(-90deg);
+									-moz-transform:rotate(-90deg);
+									-webkit-transform:rotate(-90deg);
+									width: 60px;
+									margin-top: 19px;
+									margin-right: -17px;
+								}
+
+							}
+						}
+						&:nth-child(4),
+						&:nth-child(5){
+							& > span {
+								direction:ltr;
+							}
+						}
+					}
+					&.act {
+						display:table-row;
+					}
+					&.dis {
+						display:none;
+					}
+					&.aparat {
+						background-color:lighten(@brandcolor-3, 47%);
+						& div.specialpackage {
+							border-left:7px solid @brandcolor-3;
+							color: darken(@brandcolor-3, 10%);
+						}
+					}
+					&.fajr {
+						background-color:lighten(@brandcolor-2, 38%);
+						& div.specialpackage {
+							border-left:7px solid @brandcolor-2;
+							color: darken(@brandcolor-2, 20%);
+						}
+					}
+					&:hover {
+						background-color:#efefef;
+						& > td {
+							&:last-child {
+								background-color:darken(#f3f3f3, 5%);
+								& i {
+									background-color: @brandcolor-1;
+									background-position: 10px -27px;
+								}
+							}
+						}
+					}
+				}
+			}
+			& > tfoot {
+				& > tr {
+					border:1px solid #ddd;
+					& > td {
+						text-align:center;
+						vertical-align:middle;
+						height:55px;					
+						&:hover {
+							background-color:none !important;
+						}					
+					}
+				}
+			}
+		}
+	}
+	& .loading-pack {
+		display:none;
+		border:0px;
+		padding:10px;
+		background-color:#fff;
+		border-radius: 5px;
+		& > img {
+			margin:0px 10px;
+		}
+	}
+}
+
+
+
+
+
+#debug-console {
+	float: left;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 10px;	
+	direction: ltr;
+	font-family: verdana;
+	font-size: 12px;	
+	border: 1px solid #f0c36d;
+	background-color: #f9edbe;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	& > span {
+		padding: 0px 10px;
+		display:block;
+		&:first-child {
+			padding-top:10px;
+		}
+		&:last-child {
+			padding-bottom:10px;
+		}
+	}
+	
+}
